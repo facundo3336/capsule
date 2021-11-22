@@ -1,0 +1,134 @@
+.initialLogos {
+  display: flex;
+  justify-content: space-around;
+
+  .helpIcon {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+
+    &:hover {
+      color: map-get($colors, "orange");
+
+      i {
+        color: map-get($colors, "orange");
+      }
+    }
+
+    i {
+      color: #333;
+      font-size: 4rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.discordSection {
+  background-image: url("../assets/img/discord-image.png");
+  background-position: center center;
+  background-size: cover;
+  height: 180px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  span {
+    padding: 5px 0;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.helpSection h5 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .discordSection {
+    height: 300px;
+  }
+
+  .helpSection p, .table p {
+  font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .helpSections {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    padding-right: 20px !important;
+    grid-gap: 20px 100px;
+    grid-template-areas: 'texto img'
+                         'texto logos';
+
+    .initialLogos {
+      grid-column-start: logos;
+      grid-column-end: logos;
+      grid-row-start: logos;
+      grid-row-end: logos;
+
+      a:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+      }
+    }
+
+    .discordSection {
+      grid-column-start: img;
+      grid-column-end: img;
+      grid-row-start: img;
+      grid-row-end: img;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 5px;
+
+      &:hover {
+        span {
+          background-color:rgba(0, 0, 0, 0.7);
+        }
+      }
+
+      span {
+        padding: 15px 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+    }
+
+    .helpSection {
+      grid-column-start: texto;
+      grid-column-end: texto;
+      grid-row-start: texto;
+      grid-row-end: texto;
+
+      h5 {
+        margin-top: 40px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .helpSection div h5 {
+    font-size: 2rem;
+  }  
+}
+
+

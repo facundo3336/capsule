@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.container {
+  padding: 0 !important;
+  max-width: 1140px !important;
+}
+
+.paddingText {
+  padding: 4px 12px 2px 12px;
+}
+
+.backgroundBoxColor {
+  background-color: white;
+}
+
+.desktopOnly {
+  display: none;
+}
+
+.btn-light-violet {
+  padding: 10px 30px;
+  border: map-get($colors, "violet") 1px solid;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+
+  &.btn-violet {
+    &:hover {
+      background-color: white;
+      color: map-get($colors, "violet");
+    }
+  }
+}
+
+.btn-violet {
+  background-color: map-get($colors, "violet");
+  color: white;
+
+  &:hover {
+    background-color: map-get($colors, "orange");
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.sideSpacing {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.sections {
+  margin: 35px 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    height: 100vh;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .sections {
+    margin: 0;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,36 @@
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 100px;
+  }
+
+  span {
+    font-size: 3rem;
+  }
+
+  a {
+    color: map-get($colors, "orange");
+    font-size: 2rem;
+
+    &:hover {
+      color: map-get($colors, "violet");
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .errorPage {
+    h1 {
+      margin-top: 300px;
+      font-size: 7rem;
+    }
+
+    span {
+      font-size: 4rem;
+    }
+  }
+}

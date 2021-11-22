@@ -1,0 +1,95 @@
+.article {
+  display: block;
+  border: 1px solid map-get($colors, "lighterViolet");
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 25px 0;
+
+  img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  &:hover {
+    background-color: white;
+    transition: transform 0.2s;
+    transform: scale(1.01);
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 20px 0;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+    border: none;
+    margin: 60px 0;
+
+    .articleTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eaf0f6;
+      border-radius: 20px 0 0 0;
+
+
+      h3 {
+        font-size: 3rem;
+        color: black;
+        font-weight: 700;
+        
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .articleInfo {
+      border-radius: 0 0 20px 0;
+      border: solid 1px #eaf0f6;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .content {
+        padding: 40px;
+        p:last-child {
+          margin: 0;
+        }
+      }
+
+      .btn-violet {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1340px) {
+  .sections {
+    .blog {
+      grid-auto-columns: 1fr 1fr 1fr;
+    }
+  }
+}

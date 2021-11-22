@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina de contacto donde podras contactarnos mediantes nuestras redes">
+  <meta name="keywords" content="tarjetas de video, nvidia, msi, graficos, contacto, redes sociales, telefono">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Capsule | Contacto</title>
+</head>
+<body class="contactBody">
+  <header>
+    <div class="container sideSpacing">
+      <div>
+        <div class="logo">
+          <img src="../assets/img/capsule_logo.png" width="70" alt="Imagen logo">
+          <h1><a href="../index.html">Capsule</a></h1>
+        </div>
+        <div class="footerIcons">
+          <a href="./categorias.html" ><i class="fas fa-shopping-cart"></i></a>
+          <a href="./contacto.html"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+      <div class="footerSearch">
+        <form class="form-inline my-lg-0">
+          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="desktopOnly">
+          <a href="./categorias.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="./contacto.html"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container sideSpacing">
+      <a class="navTitle" href="#">Categorias</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="./categorias.html"><i class="fas fa-shopping-basket"></i></a>
+            <a class="nav-link" href="./categorias.html">Tienda<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a href="./blog.html"><i class="fas fa-pen-square"></i></a>
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a href="./contacto.html"><i class="fas fa-address-book"></i></a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a href="./ayuda.html"><i class="fas fa-question-circle"></i></a>
+            <a class="nav-link" href="./ayuda.html">Ayuda</a>
+          </li>
+          <li class="nav-item active">
+            <a href="./acerca_de.html"><i class="fas fa-users"></i></a>
+            <a class="nav-link" href="./acerca_de.html">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sections contactSections">
+    <section class="sideSpacing contact">
+      <div class="container">
+        <div class="contactSection">
+          <div>
+            <span class="formTitle">Cómo podemos ayudarte?</span>
+            <form class="formContact" action="#">
+              <label for="name">Nombre: </label>
+              <input type="text" name="name" placeholder="Lucia"> 
+              <br>
+              <label for="surname">Apellido: </label>
+              <input type="text" name="surname" placeholder="Luz"> 
+              <br>
+              <label for="email">Email: </label>
+              <input type="email" name="email" placeholder="luciaLuz@gmail.com">
+              <br>
+              <label for="edad">Edad: </label>
+              <input type="number" name="edad" placeholder="25">
+              <br>
+              <label for="phone">Teléfono: </label>
+              <input type="text" name="phone" placeholder="093123845">
+              <br>
+              <select name="motivo" id="motivo">
+                <option value="pregunta">Pregunta frecuente</option>
+                <option value="cosumidor">Atencion al consumidor</option>
+                <option value="devolucion">Devolucion</option>
+              </select>
+              <br>
+              <input type="checkbox" class="checkbox" name="showName">
+              <label for="showName" class="showName">Mostrar tu nombre en la consulta?</label>
+              <span class="contactMessage">Nosotros te contactaremos!</span>
+              <div class="buttonsContainer">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+              </div>
+            </form>
+          </div>
+      </div>  
+    </section>
+    <section class="ubicationSection">
+      <div class="container sideSpacing">
+        <div class="mapSection">
+          <span class="mapTitle">Donde nos ubicamos</span>
+          <iframe class="iframeContact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.347392058709!2d-56.157847880021!3d-34.92282356006275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f819d6fa00fd3%3A0xb24389518c0c3751!2sPunta%20Carretas%20Shopping!5e0!3m2!1ses!2suy!4v1632840266833!5m2!1ses!2suy" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <img src="../assets/img/contacto.jpg" alt="contacto">
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container sideSpacing">
+      <div class="footerSections">
+        <div class="knowUs">
+          <span class="footerSubtitle">Conocenos</span>
+          <a class="helpFooter" href="./ayuda.html">Ayuda</a>
+          <a class="siteMapFooter" href="./siteMap.html">Mapa del sitio</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./acerca_de.html">Acerca de</a>
+        </div>
+        <div class="socialMedia">
+          <span class="footerSubtitle">Contactanos</span>
+          <a href="./contacto.html">Contacto</a>
+          <div class="mediaIcons">
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://maps.com"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+          <p>Juan Paullier 2378<br>
+            Tel: 2209 1840<br>
+            Lunes a Viernes 9:30 a 19 hrs
+          </p>
+        </div>
+        <div class="newSletter">
+          <span class="footerSubtitle">Newsletter</span>
+          <p class="textSubscribeFooter">Subscribete y recibe todas nuestras novedades!</p>
+          <form class="form-inline my-lg-0">
+            <input class="form-control" type="search" placeholder="fcv3336@gmail.com" aria-label="Search">
+            <button class="btn btn-violet my-2 my-sm-0" type="submit">Subscribirse</button>
+          </form>
+          <div class="footerCards">
+            <img src="../assets/img/cards/master.svg" alt="visa logo">
+            <img src="../assets/img/cards/visa.svg" alt="mastercard logo">
+            <img src="../assets/img/cards/oca.svg" alt="abitab logo">
+            <img src="../assets/img/cards/lider.svg" alt="redpagos logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW({
+      animateClass: 'animate__animated'
+    }).init();
+  </script>
+</body>
+</html>
+

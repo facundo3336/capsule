@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Bayonetta II",
+    "price": 60,
+    "img": "../assets/img/juegos-recomendados/bayonetta.jpg",
+    "sold": 120,
+    "id": "1",
+    "languages": ["en", "es"],
+    "description": "Bayonetta’s back and more powerful than ever. Wield wild weapons and execute deadly moves—like the powerful Umbran Climax—to take out angels and demons in this breathtaking action game. You can even team up with friends in 2-player online or local wireless co-op fights (additional accessories required; sold separately.) Bayonetta is a butt-kicking, havoc-wreaking witch who wields sweet weapons like pistols, whips, hammers, flamethrowers, and poison bows. But it’s not just about brawn—it’s also about style. Bayonetta is deadly but sleek, with moves like Witch Time that slows down time itself, and the all-new Umbran Climax—a special magic attack that summons Infernal Demons to devastate enemies. The Bayonetta™ 2 game also features an online and local wireless 2-player cooperative mode where players bet halos on their performance and work together to amplify their sass, cause destruction, and score some riches.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      { "label": "Idiomas", "text": "Inglés, Español" }
+    ],
+    "video": "https://www.youtube.com/embed/amFu1hsOtuM"
+  },
+  {
+    "name": "Mario Odissey",
+    "price": 60,
+    "img": "../assets/img/mario-odyssey.jpg",
+    "sold": 127,
+    "id": "2",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Super Mario Odyssey es un videojuego de la serie Super Mario destinado a Nintendo Switch, la videoconsola de Nintendo mitad sobremesa y mitad portátil, que anteriormente respondía al nombre en clave de NX.\n\nSuper Mario Odyssey es el primer juego de Mario en un mundo abierto desde Super Mario 64 para Nintendo 64 y Super Mario Sunshine para Nintendo GameCube. El título, totalmente tridimensional o en 3D, se desarrolla en el planeta Tierra, ya que Mario deja el Reino Champiñón para embarcarse en un viaje por lugares misteriosos y vivir nuevas aventuras a bordo de una aeronave.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/wGQHQc_3ycE"
+  },
+  {
+    "name": "Pokemon Escudo",
+    "price": 60,
+    "img": "../assets/img/pokemon-escudo.jpg",
+    "sold": 116,
+    "id": "3",
+    "languages": ["en", "es", "br"],
+    "description": "A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with three other players locally or online in the new multiplayer co-op ",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      { "label": "Idiomas", "text": "Inglés, Español, Portugues" }
+    ],
+    "video": "https://www.youtube.com/embed/fKiz265SMME"
+  },
+  {
+    "name": "Mario Kart 8",
+    "price": 60,
+    "img": "../assets/img/juegos-recomendados/mario-kart-8.jpg",
+    "sold": 122,
+    "id": "4",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Hit the road with the definitive version of Mario Kart 8 and play anytime, anywhere! Race your friends or battle them in a revised battle mode on new and returning battle courses. Play locally in up to 4-player multiplayer in 1080p while playing in TV Mode. Every track from the Wii U version, including DLC, makes a glorious return. Plus, the Inklings appear as all-new guest characters, along with returning favorites, such as King Boo, Dry Bones, and Bowser Jr.!",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/tKlRN2YpxRE"
+  },
+  {
+    "name": "Pokemon let's go",
+    "price": 49,
+    "img": "../assets/img/pokemon-lets.jpg",
+    "sold": 162,
+    "id": "5",
+    "languages": ["en", "es"],
+    "description": "Si aún no has empezado tu aventura en estos juegos, ahora tienes la oportunidad de ver por qué todos hablan de ellos. Esta versión de prueba gratuita te permitirá explorar el Bosque Verde para capturar Pokémon salvajes y combatir contra Entrenadores con tu compañero, elegido al azar entre Pikachu e Eevee. El contenido es ligeramente distinto al de los juegos completos, pero podrás ver lo divertido que resulta explorar Kanto en tu Nintendo Switch. No es posible transferir datos de la versión de prueba al juego completo.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      { "label": "Idiomas", "text": "Inglés, Español" }
+    ],
+    "video": "https://www.youtube.com/embed/7Wtfkl-g-VE"
+  },
+  {
+    "name": "Zelda Breath of the wild",
+    "price": 59,
+    "img": "../assets/img/zelda-breath.jpg",
+    "sold": 352,
+    "id": "6",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Sin reino. Sin recuerdos. Después de un letargo que ha durado 100 años, Link se despierta solo en un mundo que ya no recuerda. Ahora, el héroe legendario debe explorar ese extenso y misterioso mundo y recuperar sus recuerdos antes de que Hyrule esté perdido para siempre. Armado únicamente con lo que encuentre a su paso, Link emprenderá una aventura para buscar respuestas y obtener los recursos que necesita para sobrevivir.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/zw47_q9wbBE"
+  },
+  {
+    "name": "Mario Party",
+    "price": 59,
+    "img": "../assets/img/mario-party.jpg",
+    "sold": 172,
+    "id": "7",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Sorprende a tus oponentes mientras corres a través del tablero para recolectar la mayor cantidad de estrellas en el modo de juego de tablero original para cuatro jugadores* de la serie Mario Party, ahora con la función de juego en línea**. ¡Únete a este frenesí junto a tu familia y amigos!  No importa si estás pedaleando en triciclos, cocinando carne o quién sabe qué más, utiliza de manera astuta los controles Joy-Con™ para disfrutar de 80 alocados minijuegos. Algunos son de todos contra todos, otros, de 2 contra 2, ¡o incluso de 1 contra 3! Establece una partida privada y juega tus minijuegos favoritos y disfruta de una competencia amistosa en línea*** junto a tus amigos.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/OrLEHNF8qTg"
+  },
+  {
+    "name": "Pokemon mundo misterioso",
+    "price": 49,
+    "img": "../assets/img/pokemon-misterioso.jpg",
+    "sold": 112,
+    "id": "8",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Conviértete en un Pokémon y crea tu propio equipo de rescate con miembros como Pikachu, Eevee y Charmander, para salvar el mundo mientras exploras territorios misteriosos cuya estructura cambia cada vez que te adentras en ellos. Prepárate para explorar un precioso mundo reimaginado en Pokémon Mundo misterioso: equipo de rescate DX para Nintendo Switch, una revisión de los juegos originales para Nintendo DS y Game Boy Advance.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/zBVAMF5eMl4"
+  },
+  {
+    "name": "Mario 3D all stars",
+    "price": 49,
+    "img": "../assets/img/mario-3d.png",
+    "sold": 112,
+    "id": "9",
+    "languages": ["en", "es", "jp", "br", "fr"],
+    "description": "Descubre tres de las más grandes aventuras de Mario en 3D con Super Mario 3D All-Stars para Nintendo Switch! Este paquete especial incluye Super Mario 64, Super Mario Sunshine y Super Mario Galaxy. Todos los juegos se han puesto al día para Nintendo Switch y cuentan con gráficos en alta definición, controles adaptados a los mandos Joy-Con y un reproductor de música que incluye las épicas bandas sonoras de los tres juegos.",
+    "details": [
+      { "label": "Consola", "text": "Nintendo Switch" },
+      { "label": "Fecha de Lanzamiento", "text": "27-10-2017" },
+      { "label": "Mandos Compatibles", "text": "Mando Pro de Nintendo Switch" },
+      { "label": "Tamaño de la descarga", "text": "5747,00 MB" },
+      { "label": "Clasificación por edades", "text": "PEGI 7" },
+      {
+        "label": "Idiomas",
+        "text": "Inglés, Español, Francés, Portugues, Japonés"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/CPJcaGWoO2c"
+  }
+]

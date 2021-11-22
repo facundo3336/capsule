@@ -1,0 +1,84 @@
+.aboutUsTitle {
+  background-image: url("../assets/img/img-acerca-de.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: white;
+  }
+}
+
+.aboutText {
+  h3 {
+    margin: 40px 0 20px 0;
+    font-weight: 600;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  img {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutUsTitle {
+    height: 230px;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .aboutSections {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .aboutUsTitle {
+    height: 300px;
+  }
+}
+
+
+@media screen and (min-width: 1340px) {
+  .aboutSections {
+
+    .parallax {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100%;
+      box-sizing: border-box;
+      padding: 0 4rem;
+    }
+  }
+
+  .aboutUsTitle {
+    height: 400px;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

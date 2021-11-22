@@ -1,0 +1,278 @@
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.shop {
+  .categoriesBox {
+    text-align: center;
+    a {
+      background-color: map-get($colors, "orange");
+      color: white;
+      display: block;
+      border-radius: 5px;
+      padding: 3px;
+      margin: 7px 0;
+
+      &:hover {
+        background-color: map-get($colors, "lightViolet");
+        color: black;
+      }
+    }
+
+    .filter {
+      margin: 10px 0 20px 0;
+      padding: 5px 20px;
+      width: 100%;
+    }
+    
+  }
+
+  .products {
+    text-align: center;
+
+    
+
+    .product {
+      border: 1.2px solid map-get($colors, "lighterViolet");
+      padding: 20px 15px;
+      border-radius: 5px;
+      width: auto;
+      background-color: white;
+      margin-bottom: 10px;
+
+      .btn-violet {
+        margin: 20px 0 10px 0;
+      }
+
+      img {
+        max-width: 180px;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      i {
+        color: map-get($colors, "starsColor");
+      }
+
+      .productIcons {
+        margin-top: 8px;
+
+        i {
+          color: black;
+        }
+
+        a {
+          padding: 5px 7px;
+          border-radius: 50%;
+          &:hover {
+            background-color: map-get($colors , "lightViolet");
+          }
+        }
+      }
+
+      .solds {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+  
+        div:first-child {
+          width: 50%;
+          height: 10px;
+          background-color: map-get($colors , "lightOrange");
+        }
+  
+        div:last-child {
+          width: 20%;
+          height: 10px;
+          background-color: rgb(206, 205, 205);
+        }
+      }
+
+      span {
+        margin-top: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: black;
+      }
+
+      img {
+        width: 70%;
+        height: auto;
+      }
+
+      .productPrice {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: black;
+        width: 30%;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.opinionsCarousel {
+  margin-top: 35px;
+
+  .carousel-control-prev {
+    filter: invert(50%);
+  }
+  
+  .carousel-next {
+  filter: invert(50%);
+  } 
+}
+
+.opinions {
+  display: flex;
+  justify-content: space-between;
+
+  .opinion {
+    display: flex;
+    flex-direction: column;
+    width: calc(30% - 6px);
+    font-size: 0.9rem;
+    text-align: center;
+
+    span {
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 80px;
+      margin: 0 auto;
+    }
+
+    i {
+      color: map-get($colors , "starsColor");
+      margin-top: 6px;
+    }
+  }
+}
+
+.offer {
+  background-color: white;
+
+  &:hover {
+    background-color: white;
+    transition: transform 0.2s;
+    transform: scale(1.05);
+  }  
+}
+
+.shop-images {
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop {
+    display: flex;
+    .categoriesBox {
+      padding: 15px;
+      text-align: left;
+      background-color: white;
+
+      
+      a:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        background-color: white;
+        color: black;
+        font-size: 1.02rem;
+
+        &:hover {
+          color: map-get($colors , "orange");
+          background-color: white;
+        }
+      }
+
+      .filter {
+        padding-left: 3px;
+
+        &:focus {
+          outline-color: map-get($colors, "violet");
+          border-color: map-get($colors, "violet");
+        }
+      }      
+    }
+
+    .products {
+      margin-left: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      flex-grow: 1;
+       
+      .product {
+        grid-column: auto;
+
+        &:hover {
+          background-color: white;
+          transition: transform 0.2s;
+          transform: scale(1.05);
+        }
+
+        .productPrice {
+          width: 40%;
+        }
+      }      
+    }
+
+    
+
+    
+  }
+
+  .opinionsCarousel {
+    .opinions {
+      justify-content: center;
+    }
+  }
+
+  .shop-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    a {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+}
+
+@media screen and (min-width: 976px) {
+  .shop {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1183px) {
+  .shop {
+    .products {
+      margin-left: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 15px;     
+        
+    }
+  }
+
+  
+} 

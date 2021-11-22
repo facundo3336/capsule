@@ -1,0 +1,198 @@
+footer {
+  background-color: map-get($colors, "lighterViolet");
+  padding: 25px 0 10px 0;
+  margin-top: 0;
+  text-align: center;
+
+
+  .footerSubtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .knowUs {
+    margin-bottom: 25px;
+    border-bottom: 1px solid map-get($colors , "lightViolet");
+    padding-bottom: 25px;
+
+    a {
+      font-size: 1.05rem;
+    }
+
+    a:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .newSletter {
+    margin-bottom: 25px;
+
+    p {
+      margin: 5px 0 0 0;
+    }
+  }
+
+  .form-inline {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 39%;
+    }
+
+    .form-control {
+      width: 60%;
+      margin-bottom: 0;
+
+      &:focus {
+        border-color: map-get($colors , "orange");
+      }
+    }  
+  }
+
+  .footerCards {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: auto;
+      filter: grayscale(1);
+      opacity: 0.7;
+    }
+  }
+
+  a {
+    display: block;
+    color: map-get($colors, "violet");
+    font-size: 1.2rem;
+    margin: 6px 7px;
+
+    &:hover {
+      color: map-get($colors, "orange");
+    }
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border-bottom: 1px solid map-get($colors , "lightViolet");
+    padding-bottom: 25px;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      font-size: 1.05rem;
+    }
+
+    .mediaIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+      
+  }
+}
+
+@media screen and (min-width: 560px) {
+  footer {
+    .form-inline {
+      justify-content: center;
+
+      .btn {
+        width: 39%;
+        margin-left: 5px;
+      }
+  
+      .form-control {
+        width: calc(61% - 10px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 976px) {
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .container {
+      .footerSections {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        div {
+          border: none;
+        }
+
+        .knowUs {
+          text-align: left;
+          .helpFooter {
+            margin-top: 6px;
+          }
+
+          a {
+            margin-left: 0;
+            font-weight: 500;
+          }
+        }
+
+        .newSletter {
+          text-align: left;
+
+          .textSubscribeFooter {
+            margin-top: 6px;
+          }
+        }
+
+        .socialMedia {
+          text-align: left;
+
+          a {
+            margin-left: 0;
+            font-weight: 500;
+          }
+
+          .mediaIcons {
+            justify-content: left;
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1183px) {
+  footer {
+    .form-inline {
+      width: 100%;
+
+      .btn {
+        display: block;
+        width: 100%;
+      }
+  
+      .form-control {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,518 @@
+.productBody {
+  position: relative;
+
+  .coverProduct {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(241, 132, 78, 0.75);
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 45%;
+    }
+
+    .coverProductContainer {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  .sections {
+    .information {
+      padding: 10px 0;
+
+      h3 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .stockBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        background-color: #eceaea;
+        border-radius: 5px;
+        font-weight: 600;
+        padding: 6px;
+        border: 1px solid rgb(175, 175, 175);
+        margin-top: 12px;
+
+        div {
+          border-left: solid 1px rgb(117, 115, 115);
+          flex-basis: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          white-space: nowrap;
+          padding: 0 6px;
+
+          &:last-child {
+            flex-basis: 43%;
+          }
+
+          &:first-child {
+            border: none;
+          }
+
+          i {
+            color: rgb(13, 187, 13);
+            padding: 0 4px 4px 0;
+          }
+        }
+
+        img {
+          width: auto;
+          height: 15px;
+        }
+      }
+
+      .language {
+        font-size: 1.05rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        span {
+          padding-right: 8px;
+          margin-right: 8px;
+          border-right: solid 0.8px rgb(117, 115, 115);
+        }
+
+        img {
+          height: 15px;
+          width: auto;
+          border-radius: 50%;
+          margin-right: 6px;
+        }
+      }
+    }
+
+    .productPrice {
+      text-align: center;
+      padding: 10px 10px 20px 10px;
+      border-radius: 5px;
+
+      span {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+
+      .productPriceContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+
+        .buyButton {
+          width: 75%;
+          background-color: map-get($colors, "orange");
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 600;
+          font-size: 1.2rem;
+          border: none;
+        }
+
+        .heart {
+          width: 22%;
+          color: map-get($colors, "orange");
+          border: 1.5px solid map-get($colors, "orange");
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .productImg {
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      .background {
+        background-image: url(../assets/img/mario-odyssey.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(20px);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+        z-index: 1;
+      }
+    }
+
+    .videoSection {
+      margin-top: 25px;
+
+      .videoTitle {
+        border-radius: 4px 4px 0 0;
+        font-size: 1.2rem;
+        display: block;
+        width: 100px;
+        background: map-get($colors, "violet");
+        color: white;
+        font-weight: 600;
+      }
+
+      .iframeSection {
+        background-color: map-get($colors, "violet");
+        border-top: 7px solid map-get($colors, "violet");
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .descriptionSection {
+      margin-top: 40px;
+
+      .descriptionTitle {
+        border-bottom: 7px solid map-get($colors, "violet");
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        span {
+          background-color: map-get($colors, "violet");
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 4px 4px 0 0;
+          padding: 4px 12px 2px 12px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .productDetails {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      .gameDetails {
+        margin: 7px 0;
+        font-size: 1.05rem;
+
+        span {
+          display: block;
+
+          &:first-child {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .detailsTitle {
+        border-bottom: 7px solid map-get($colors, "violet");
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        span {
+          background-color: map-get($colors, "violet");
+          color: white;
+          font-size: 1.2rem;
+          padding: 4px 12px 2px 12px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .recomendedTitle {
+      border-bottom: 7px solid map-get($colors, "orange");
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      justify-content: end;
+      margin-top: 50px;
+
+      span {
+        background-color: map-get($colors, "orange");
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 4px 4px 0 0;
+        font-weight: 600;
+      }
+    }
+
+    .topGamesSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+
+      .topGamesImage {
+        height: 120px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+
+        &:hover {
+          transition: transform 0.2s;
+          transform: scale(1.03);
+
+          span {
+            background: rgba(126, 63, 242, 0.6);
+          }
+        }
+
+        span {
+          width: 100%;
+          font-weight: 600;
+          color: white;
+          background: rgba(0, 0, 0, 0.6);
+          display: block;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .productBody {
+    .sections {
+      .videoSection {
+        .iframeSection {
+          iframe {
+            height: 300px;
+          }
+        }
+      }
+
+      .topGamesSection {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .topGamesImage {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productBody {
+    .coverProduct {
+      button {
+        width: 45%;
+      }
+
+      .coverProductContainer {
+        padding: 30px;
+      }
+    }
+    .sections {
+      .productImg {
+        .background {
+          display: none;
+        }
+      }
+
+      .productInformation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .productImg {
+          img {
+            width: 200px;
+            margin-right: 20px;
+            margin-top: 20px;
+          }
+        }
+
+        .information {
+          flex-grow: 1;
+          display: grid;
+          align-items: center;
+          background-color: map-get($colors, "lighterGrey");
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: -4px 2px 5px 0px rgba(187, 184, 184, 0.49);
+          -webkit-box-shadow: -4px 2px 5px 0px rgba(187, 184, 184, 0.49);
+          -moz-box-shadow: -4px 2px 5px 0px rgba(187, 184, 184, 0.49);
+
+          h3 {
+            font-size: 2rem;
+            font-weight: 700;
+          }
+
+          .language {
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            img {
+              height: 22px;
+            }
+          }
+
+          .productPrice {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px;
+            background-color: map-get($colors, "lighterViolet");
+
+            span {
+              width: 30%;
+              font-weight: 700;
+              padding-top: 5px;
+            }
+
+            .productPriceContainer {
+              width: 65%;
+              padding-top: 0;
+
+              a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:first-child {
+                  background-color: map-get($colors, "lighterGrey");
+                }
+
+                &:hover {
+                  color: white;
+                  background-color: map-get($colors, "violet");
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .topGamesSection {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        .topGamesImage {
+          height: 200px;
+          overflow: hidden;
+
+          &:hover {
+            span {
+              transform: translate(0, 0);
+              transition: transform 0.2s;
+            }
+          }
+
+          span {
+            transform: translate(0, 100%);
+          }
+        }
+      }
+
+      .videoSection {
+        .iframeSection {
+          iframe {
+            height: 400px;
+          }
+        }
+      }
+
+      .productDetails {
+        .gridDetails {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-row-gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productBody {
+    .gridDetails {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .productBody {
+    .sections {
+      .topGamesSection {
+        padding-top: 30px;
+        .topGamesImage {
+          height: 270px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productBody {
+    .sections {
+      .productInformation {
+        .productImg {
+          img {
+            height: 400px;
+            width: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .videoAndDescription {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+        .videoSection {
+          margin-top: 0;
+          flex-basis: 48%;
+          padding-right: 25px;
+
+          .iframeSection {
+            iframe {
+              height: 300px;
+            }
+          }
+        }
+
+        .descriptionSection {
+          margin-top: 0;
+          flex-basis: 48%;
+          flex-grow: 1;
+        }
+      }
+
+      .productDetails {
+        margin-bottom: 70px;
+      }
+    }
+  }
+}

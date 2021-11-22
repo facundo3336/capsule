@@ -1,0 +1,151 @@
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.formContact {
+  & label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  & input {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-family: "Rajdhani", sans-serif;
+    padding: 5px;
+    width: 100%;
+  }
+
+  & select {
+    font-size: 1.2rem;
+    font-family: "Rajdhani", sans-serif;
+    margin: 15px 0;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .showName {
+    text-align: center;
+  }
+
+  .contactMessage {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: map-get($colors, "lightOrange");
+    font-weight: 600;
+  }
+
+  & button {
+    font-family: "Rajdhani", sans-serif;
+    background-color: #7e3ff2;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 40%;
+    margin-right: 10px;
+
+    &:hover {
+      color: black;
+      background-color: map-get($colors, "lightViolet");
+    }
+  }
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mapSection {
+  margin-top: 50px;
+  text-align: center;
+
+  .mapTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .iframeContact {
+    margin-top: 10px;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contactSections {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 1140px;
+    margin: 50px auto;
+
+    .ubicationSection {
+      flex-grow: 1;
+    }
+
+    .formContact {
+      width: 100%;
+    }
+
+    .mapSection {
+      flex-grow: 1;
+
+      .mapTitle {
+        display: none;
+      }
+
+      .iframeContact {
+        height: 700px;
+        margin-top: 0;
+      }
+
+      img {
+        height: 200px;
+        width: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1340px) {
+    form {
+      width: 50%;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    .showName {
+      display: inline;
+    }
+
+    .checkbox {
+      width: auto;
+    }
+  }
+}

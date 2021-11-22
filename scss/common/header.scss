@@ -1,0 +1,292 @@
+header {
+  padding: 0.8rem 0;
+  background-color: map-get($colors, "lightViolet");
+  display: flex;
+  flex-direction: column;
+  grid-column: 1fr;
+
+  .container {
+    .logo {
+      display: flex;
+      align-items: center;
+    
+      img {
+        width: 40px;
+        height: auto;
+        display: block;
+        margin: 0 3px 0 0;
+      }
+    }
+  
+    .footerIcons {
+      
+      i {
+        font-size: 1.2rem;
+        margin-left: 10px;
+
+        &:hover {
+          color: map-get($colors, "orange");
+        }
+      }
+    }
+  
+    div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .footerSearch {
+      margin-top: 10px;
+      form {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+  
+        .form-control {
+          width: auto;
+          display: block;
+          margin: 0 5px 0 0;
+          flex-grow: 1;
+  
+          &:focus {
+            border-color: map-get($colors, "orange");
+          }
+        }
+  
+        .btn {
+          display: block;
+          width: auto;
+          background-color: map-get($colors, "violet");
+          border: none;
+          color: white;
+  
+          &:hover {
+            background-color: map-get($colors, "orange");
+          }
+        }
+      }
+    }
+  
+    h1 {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      
+  
+      a {
+        color: map-get($colors, "black");
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+  
+        &:active {
+          color: map-get($colors, "black");
+          font-weight: 700;
+          text-align: center;
+          text-decoration: none;
+        }
+  
+        &:hover {
+          color: map-get($colors, "black");
+        }
+      }
+    }
+    a {
+    color: map-get($colors, "black");
+    font-size: 1.2rem;
+    font-weight: 500;
+    }
+  }
+  }
+
+  
+
+.navbar {
+  background-color: map-get($colors, "violet");
+  text-decoration: none;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+
+  .container {
+    flex-grow: 1;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  i {
+    display: none;
+  }
+
+  .navTitle {
+    font-size: 1.2rem;
+  }
+
+  > a {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  a {
+    color: map-get($colors, "white");;
+    padding: 5px 0;
+  }
+
+  &.navbar-dark .navbar-toggler {
+    border-color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footerIcons {
+        display: none;
+      }
+  
+      .footerSearch {
+        display: flex;
+        align-items: center;
+        width: auto;
+  
+        .form-inline {
+          width: 300px;
+  
+          .form-control {
+            width: 80%;
+          }
+  
+          .btn {
+            width: calc(20% - 10px);
+          }
+        }
+  
+        .desktopOnly {
+          display: block;
+          display: flex;
+          
+          a {
+            margin-left: 10px;
+            
+            i {
+              font-size: 1.5rem;
+
+              &:hover {
+                color: map-get($colors, "orange");
+              }
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+  header {
+    .container {
+      h1 {
+        a {
+          font-size: 2.3rem;
+        }
+      }
+
+      .desktopOnly {
+        i {
+          margin-left: 10px;
+          font-size: 1.3rem;
+
+          &:hover {
+            color: map-get($colors, "orange");
+          }
+        }
+      }
+
+      .footerSearch {
+        margin: 0;
+      }
+    }
+  }
+
+  .navbar {
+    justify-content: center;
+    .navTitle {
+      display: none;
+      padding: 0 1.5rem;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 1.4rem;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .navbar-collapse {
+      justify-content: center;
+
+      a {
+        margin: 0 20px;
+        padding-top: 0;
+
+        &:first-child {
+          padding: 0;
+        }
+      }
+
+      .nav-item:hover {
+        a, i {
+          color: map-get($colors, "lightOrange");
+        }
+        
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1183px) {
+  header {
+    .container {
+        h1 {
+          a {
+            font-size: 2.7rem;
+          }
+        }
+    }
+  }
+}

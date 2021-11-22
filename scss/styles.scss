@@ -1,0 +1,27 @@
+$colors: (
+  "violet": #7e3ff2,
+  "white": #ffffff,
+  "lightViolet": #c5c7f6,
+  "black": #000000,
+  "orange": #ee6002,
+  "lightOrange": #f1844e,
+  "lighterViolet": #efe5fd,
+  "lighterOrange": #fff2df,
+  "starsColor": rgb(233, 233, 20),
+  "lightGrey": rgb(192, 192, 192),
+  "lighterGrey": rgb(248, 244, 244),
+);
+
+@import "./common/layout.scss";
+@import "./common/header.scss";
+@import "./common/footer.scss";
+@import "./pages/index.scss";
+@import "./pages/ayuda.scss";
+@import "./pages/blog.scss";
+@import "./pages/contacto.scss";
+@import "./pages/producto.scss";
+@import "./pages/categorias.scss";
+@import "./pages/acercaDe.scss";
+@import "./pages/siteMap.scss";
+@import "./pages/carrito.scss";
+@import "./pages/404.scss";
